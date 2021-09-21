@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <nav> <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="dojoweather">
+                <h1>DojoWeather</h1>
+            </div>
+            <div class="cities">
+                <ul class="navlinks">
+                    <li onclick="alert('Loading weather report...')">Burbank</li>
+                    <li onclick="alert('Loading weather report...')">Chicago</li>
+                    <li onclick="alert('Loading weather report...')">Dallas</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="sanjose"> <!-- San Jose and temperature select dropdown -->
+        <div class="citylabel">
+            <h1>San Jose</h1>
+        </div>
+        <div class="tempselection">
+            <label for="tempselector">show temperature in </label>
+            <select name="tempselector" id="tempselector" onselect="convertTemp()">
+                <option value="C">&deg;C</option>
+                <option value="F">&deg;F</option>
+            </select>
+        </div>
+    </div>
+    <div class="weeklyforecast"> <!-- Weekly Forecast -->
+        <div id="today" class="weeklydisplay">
+            <h3>Today</h3>
+            <img src="./assets/some_rain.png" alt="rain" class="weatherpic">
+            <p>some rain</p>
+            <div class="tempreading">
+                <div class="high">
+                    <p>24&deg;</p>
+                </div>
+                <div class="low">
+                    <p>18&deg;</p>
+                </div>
+            </div>
+        </div>
+        <div id="tomorrow" class="weeklydisplay">
+            <h3>Tomorrow</h3>
+            <img src="./assets/some_sun.png" alt="sun" class="weatherpic">
+            <p>some sun</p>
+            <div class="tempreading">
+                <div class="high">
+                    <p>27&deg;</p>
+                </div>
+                <div class="low">
+                    <p>19&deg;</p>
+                </div>
+            </div>
+        </div>
+        <div id="friday" class="weeklydisplay">
+            <h3>Friday</h3>
+            <img src="./assets/some_clouds.png" alt="clouds" class="weatherpic">
+            <p>some clouds</p>
+            <div class="tempreading">
+                <div class="high">
+                    <p>21&deg;</p>
+                </div>
+                <div class="low">
+                    <p>16&deg;</p>
+                </div>
+            </div>
+        </div>
+        <div id="saturday" class="weeklydisplay">
+            <h3>Saturday</h3>
+            <img src="./assets/some_sun.png" alt="some sun" class="weatherpic">
+            <p>some sun</p>
+            <div class="tempreading">
+                <div class="high">
+                    <p>26&deg;</p>
+                </div>
+                <div class="low">
+                    <p>21&deg;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cookie"> <!-- Cookie Disclaimer -->
+        <img src="./assets/cookie.png" alt="cookie" class="cookiepic">
+        <div class="cookietext">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="removeCookie()" id="accept"><strong>I Accept</strong></button>
+    </div>
+    <div class="footer"></div> <!-- Footer -->
+<script src="./script.js"></script>
+</body>
+</html>

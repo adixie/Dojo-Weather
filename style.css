@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+
+nav {
+    height: 6rem;
+    background-color: skyblue;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.dojoweather h1 {
+    font-size: 2.5rem;
+}
+
+.cities {
+    height: 6rem;
+    width: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4.5rem;
+    font-size: 1.7rem;
+}
+
+/* San Jose and temperature selection */
+
+.sanjose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 4px solid black;
+}
+
+#tempselector {
+    height: 3rem;
+    width: 3rem;
+}
+
+/* Weekly Forecast */
+
+.weeklyforecast {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 360px;
+    width: 73%;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+}
+
+.weeklydisplay {
+    background-color: lightgray;
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.weatherpic {
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.tempreading {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: blue;
+}
+
+/* Cookie pop up */
+
+#cookie {
+    height: 170px;
+    width: 70%;
+    background-color: lightgray;
+    border: 3px solid black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 230px;
+}
+
+.cookietext {
+    height: 100px;
+    width: 700px;
+}
+
+#accept {
+    height: 2.2rem;
+    width: 6rem;
+    background-color: lightskyblue;
+    color: black;
+    box-shadow: 4px 3px black;
+    border: 2px solid black;
+}
